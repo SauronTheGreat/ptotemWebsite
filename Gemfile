@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem "paperclip", "~> 3.0"
 gem 'rails_admin'
 gem 'gon'
+gem 'execjs'
+gem 'therubyracer'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
