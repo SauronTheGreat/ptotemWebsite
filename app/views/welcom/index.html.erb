@@ -1,0 +1,417 @@
+
+
+<!--The code for shutter. This appears when the apple is clicked-->
+<div class="shutter" style="z-index: 1204">
+  <div id="game_quit">Close</div>
+  <img src="/assets/images/easy_shutter.jpg" id="easy_graffiti" style="display: none">
+  <img src="/assets/images/hard_shutter.jpg" id="hard_graffiti" style="display: none">
+
+
+  <div class="knob_container" style="display: none">
+
+    <div style="position:absolute;left:50px;top:0px;width: 15%"><input class="knob second" id="1"></div>
+    <div style="position:absolute;left:220px;top:0px;width: 15%"><input class="knob minute" id="2"></div>
+    <div style="position:absolute;left:390px;top:0px;width: 15%"><input class="knob hour" id="3"></div>
+    <div style="position:absolute;left:560px;top:0px;width: 15%"><input class="knob third" id="4"></div>
+
+
+
+
+
+
+  </div>
+
+  <div class="windy" style="position:absolute;z-index: 1204;left:600px;display: none">
+    <ul class="wi-container" id="windy_shutter"></ul>
+    <nav>
+      <span id="nav-prev_rules">prev</span>
+      <span id="nav-next_rules">next</span>
+    </nav>
+  </div>
+</div>
+
+<!--the code for footer.... the copy right with compnay name-->
+<div class="row hidden-xs" id="footer">Ptotem &copy; 2013</div>
+
+<!--This is the code for the about us section of the website.-->
+<div class="row" id="aboutUs">
+  <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5 col-sm-5 col-sm-offset-6">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-md-offset-1 col-lg-offset-0">
+        <div class="windy">
+          <ul id="wi-el" class="wi-container"></ul>
+          <nav>
+            <span id="nav-prev">prev</span>
+            <span id="nav-next">next</span>
+          </nav>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-lg-6 col-md-5 col-md-offset-1 col-lg-offset-1">
+        <!--This section is not being used. I believe that this was an old section and hence I am commenting this.  I would remove this section once I am done with complete testing.-->
+        <!--TODO:Remove the below section as its an older one-->
+        <!--<div style="text-align: center;margin-left: 30px;" class="visible-sm ptotem_text"><br>-->
+        <!--<h2>About Ptotem</h2>-->
+        <!--<p>These were the yesterdays. It was when our parents would tell us to stop playing those silly-->
+        <!--computer games. “Go and read your books instead”, they had said. “These computer games are-->
+        <!--addictive and would never get you anywhere”, they had added.-->
+        <!--Who would ever have thought that these games would make a multibillion dollar industry. Who-->
+        <!--would ever have thought of these games becoming a core part various tutelage designs.-->
+        <!--It was the year 2009. A few senior Corporate Professionals had decided to put end to their-->
+        <!--mundane corporate existence and lifestyle, and would go on to create Ptotem Learning. The idea-->
+        <!--would be a simple one – to get together people to play games. Ptotem would build board games and-->
+        <!--cause to people to be entertained. And then Ptotem would build simulations and cause people to-->
+        <!--learn.-->
+        <!--&lt;!&ndash;Using cutting edge game theories and modern software, Ptotem would then recreate a version to&ndash;&gt;-->
+        <!--&lt;!&ndash;merge gaming with simulations that help to learn even while being entertained. And in the&ndash;&gt;-->
+        <!--&lt;!&ndash;process unearth the tremendously potential for making use of these game mechanics to create&ndash;&gt;-->
+        <!--&lt;!&ndash;engaging learning, marketing and branding platforms.&ndash;&gt;-->
+        <!--&lt;!&ndash;Serious Gaming redefined there! And that pretty much is what we continue to do now.&ndash;&gt;-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <div class="hidden-sm"><br>
+          <h4 class="aboutPtotem">About Ptotem</h4>
+          <p class="aboutPtotem" style="width: 350px">
+            <%= simple_format(@company.description) %>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row" id="coordinates">
+      <a target="_blank" href="http://maps.google.co.in/maps/ms?msa=0&msid=203265541477027233533.0004aab8247df4293252d&ie=UTF8&vpsrc=6&ll=19.019401,72.866521&spn=0.0142,0.018239&z=15&source=embed"><img
+      src="assets/images/map.png" class="col-lg-2 col-md-2 col-sm-4 nopad coordinate_block" data-content="Ptotem Learning Projects LLP,<br>A332, Antop Hill Warehousing,<br>Barkat Ali Road,Wadala (East),<br>Mumbai,India - 400035 <br> Contact Number: +91 9833939793"
+      data-title="Location"/>
+      </a>
+
+      <img src="assets/images/mail.png" class="col-lg-2 col-md-2 col-sm-4 nopad coordinate_block" data-toggle="modal" data-target="#myModal" data-content="Send us an email query and we will get in touch with you." data-title="Contact Us"/>
+
+      <a href="https://www.facebook.com/ptotembook" target="_blank"><img src="assets/images/facebook.png" class="col-lg-2 col-md-2 col-sm-4 nopad coordinate_block" data-content="Catch us on Facebook for the latest news on our games" data-title="Facebook"/></a>
+
+      <a href="http://www.linkedin.com/company/ptotem-learning-projects" target="_blank">
+        <img src="assets/images/linkedin.png" class="col-lg-2 col-md-2 col-sm-4 nopad coordinate_block" data-content="Network with us and discover your gaming needs on LinkedIn" data-title="LinkedIn"/>
+      </a>
+
+      <a href="https://twitter.com/ptotemlearning" target="_blank">
+        <img src="assets/images/twitter.png" class="col-lg-2 col-md-2 col-sm-4 nopad coordinate_block" data-content="Check out what we have to say about serious games on Twitter" data-title="Twitter"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--This is the code for the products section of the website.-->
+<div class="row" id="products">
+  <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5 col-sm-5 col-sm-offset-6">
+    <div class="main clearfix">
+      <div class="bb-custom-wrapper">
+        <div id="product_page">
+          <div class="bb-bookblock" id="bookblockProduct"></div>
+        </div>
+        <br>
+        <nav>
+          <span class="bb-nav-prev" id="navPrdPrev" style="z-index: 999999">prev</span>
+          <span class="bb-nav-next" id="navPrdNext" style="z-index: 999999">next</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="first_page" style="overflow: hidden; pointer-events:none;">
+  <div class="col-lg-6 col-md-5 col-sm-4 hidden-xs superpanel" id="logo_area">
+    <ul class="scene">
+      <li id="logo" class="layer" data-depth="0.00">
+        <div class="panel">
+          <div class="row">
+            <a href="#" id="logo_pic_image" style="pointer-events:auto;"><img id="logopic" src="assets/images/logo_with_name.png" class="col-lg-7 col-md-9 col-sm-11 col-xs-8" style="margin-bottom: 20px;"></a>
+          </div>
+
+          <div class="row">
+            <div id="catchphrase" class="col-lg-7 col-md-9 col-sm-11">
+              <span class="hsjs">TRAINING AND MARKETING</span>
+              <span class="hsjs">SOLUTIONS POWERED BY</span>
+              <span class="hsjs" style="font-family: 'Impact'">SERIOUS GAMES</span>
+            </div>
+          </div>
+          <!--TODO:Remove this coode as this was being used earlier and is no more being used.-->
+          <!--<div class="row">-->
+          <!--<div id="slogan" class="gameView col-lg-7 col-md-9 col-sm-11">-->
+          <!--<div id="slogan_text">-->
+          <!--<div class="row">-->
+          <!--<a href="#" id="do" class="col-lg-4 col-md-4 col-sm-4 spinner" style="pointer-events:auto;">-->
+          <!--<div id="do_text" class="doitwithgames">Do</div>-->
+          <!--</a>-->
+
+          <!--<div class="col-lg-8 col-md-8 col-sm-8">-->
+
+          <!--<div class="row">-->
+          <!--<a href="#" id="it" class="col-lg-4 col-md-4 col-sm-4 spinner" style="pointer-events:auto;">-->
+          <!--<div id="it_text" class="doitwithgames">It</div>-->
+          <!--</a>-->
+
+          <!--<a href="#" id="with" class="col-lg-8 col-md-8 col-sm-8 spinner" style="pointer-events:auto;">-->
+          <!--<div id="with_text" class="doitwithgames">With</div>-->
+          <!--</a>-->
+          <!--</div>-->
+
+          <!--<div class="row">-->
+          <!--<a href="#">-->
+          <!--<div id="games" class="col-lg-12 col-md-12 col-sm-12 spinner" style="pointer-events:auto;">-->
+          <!--<div id="games_text" class="doitwithgames">Games</div>-->
+          <!--</div>-->
+          <!--</a>-->
+          <!--</div>-->
+
+          <!--</div>-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--<br>-->
+
+          <!--<div class="appleinstructions">-->
+          <!--<p>-->
+          <!--Click on the different shapes above to cycle through a set of colours. Scan through-->
+          <!--the pages on the right and figure out the secret code required to unlock the-->
+          <!--website.-->
+          <!--</p>-->
+          <!--</div>-->
+          <!--</div>-->
+          <!--</div>-->
+          <br>
+          <br>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="col-lg-6 col-md-7 col-sm-8 superpanel hidden-xs" id="pic_area">
+    <ul class="scene" id="parallax_view">
+
+
+      <li id="sky" class="layer" data-depth="0.0"><div class="panel"><img id="sky_image" src="assets/images/panelback.jpg"/></div></li>
+
+      <li id="cloud1" class="layer" data-depth="0.30" data-scalar-x="8"><div class="panel"><img class="cloud_image" src="assets/images/cloud.png"/></div></li>
+
+      <li id="cloud2" class="layer" data-depth="0.5" data-scalar-x="4"><div class="panel"><img class="cloud_image" src="assets/images/cloud.png"/></div></li>
+
+      <li id="cloud3" class="layer" data-depth="0.6" data-scalar-x="12"><div class="panel"><img class="cloud_image" src="assets/images/cloud.png"/></div></li>
+
+      <li id="tree" class="layer" data-depth="0.0">
+        <div class="panel">
+          <img src="assets/images/layer1.png">
+          <a href="#" class="gamify" style="pointer-events:auto;"><img src="assets/images/apple.png" style="position: absolute;width:3em;height:3em; top:50%;right:30%;"></a>
+          <a href="#" class="glower" style="pointer-events:auto; display: none;"><img src="assets/images/apple.png" style="position: absolute;width:3em;height:3em; top:50%;right:30%;"></a>
+        </div>
+      </li>
+
+      <!--TODO: remove this as we are no longer using bookblock for hard and easy games presentation.-->
+      <!--<li class="layer" data-depth="0.2" style="display: none;">-->
+      <!--<div id="slogan_game" class="gameView">-->
+      <!--<div class="bb-custom-wrapper">-->
+      <!--<div id="slogan_game_wrapper">-->
+      <!--<div id="gameWin" class="bb-bookblock">-->
+      <!--<a href="#" class="close_slogan_btn" style="pointer-events:auto;" onclick="window.location.reload();">-->
+      <!--<div class="close_parallax_btn_text">X</div>-->
+      <!--</a>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<br>-->
+      <!--<nav>-->
+      <!--<span class="bb-nav-prev" id="gameWinPrev" style="z-index: 999999">prev</span>-->
+      <!--<span class="bb-nav-next" id="gameWinNext" style="z-index: 999999">next</span>-->
+      <!--</nav>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</li>-->
+
+
+      <!--<li class="layer" data-depth="0.2">-->
+      <!--<div id="slogan_game_easy" class="gameView">-->
+      <!--<div class="bb-custom-wrapper">-->
+      <!--<div id="slogan_game_wrapper_easy">-->
+      <!--<div class="bb-bookblock" id="bbEasy"></div>-->
+      <!--</div>-->
+      <!--<br>-->
+      <!--<nav>-->
+      <!--<span class="bb-nav-prev" id="navEasyPrev" style="z-index: 999999">prev</span>-->
+      <!--<span class="bb-nav-next" id="navEasyNext" style="z-index: 999999">next</span>-->
+      <!--</nav>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</li>-->
+
+
+      <!--<li class="layer" data-depth="0.2">-->
+      <!--<div id="slogan_game_hard" class="gameView">-->
+      <!--<div class="bb-custom-wrapper">-->
+      <!--<div id="slogan_game_wrapper_hard">-->
+      <!--<div class="bb-bookblock" id="bbHard">-->
+      <!--<a href="#" class="close_parallax_btn" style="pointer-events:auto;"><div class="close_parallax_btn_text">X</div></a>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<br>-->
+      <!--<nav>-->
+      <!--<span class="bb-nav-prev" id="navHardPrev" style="z-index: 999999">prev</span>-->
+      <!--<span class="bb-nav-next" id="navHardNext" style="z-index: 999999">next</span>-->
+      <!--</nav>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</li>-->
+    </ul>
+  </div>
+</div>
+
+
+<ul id="menu" class="hidden-xs">
+  <li id="home" style="display: none">Home</li>
+  <li id="teamLink">About Us</li>
+  <li id="productsLink">Products</li>
+  <li><a href="demo_intro.html" id="demo_link" target="_blank">Demos</a></li>
+  <li><a href="http://ptotemtalk.wordpress.com/" target="_blank">Blog</a></li>
+</ul>
+
+
+<div id="menu_overlay" class="hidden-xs"></div>
+
+<img src="assets/images/logo_with_name.png" style="position: absolute; left:20px;top:20px;width:200px;height:75px;display: none;" id="second_logo">
+
+
+
+<div class="modal fade" id="confModal" tabindex="-1" role="dialog" aria-labelledby="confModalLabel" aria-hidden="true" style="z-index: 9999;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h4 class="modal-title">Quit Game</h4></div>
+      <div class="modal-body"><p>Are you sure you want to wimp out? It’s not that tough…</p></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Give it a Shot</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.reload()">Wimp Out</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button onclick="myFunction()" id="try_it" style="display: none">Try it</button>
+
+<!--TODO: remove the modals. These were used earier but now we have sswitched to bootboxJS and the code is written in zndexpage.js-->
+<!--<div class="modal fade" id="confGameModeModal" tabindex="-1" role="dialog" aria-labelledby="confModalLabel" aria-hidden="true" style="z-index: 9999;">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="modal-header"><h4 class="modal-title">Quit Game</h4></div>-->
+<!--<div class="modal-body"><p>Are you sure you want to wimp out? It’s not that tough…</p></div>-->
+<!--<div class="modal-footer">-->
+<!--<button type="button" class="btn btn-default" data-dismiss="modal">Give it a Shot</button>-->
+<!--<button type="button" class="btn btn-primary" onclick="window.location.reload()">Wimp Out</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="modal fade" id="congModal" tabindex="-1" role="dialog" aria-labelledby="congModalLabel" aria-hidden="true" style="z-index: 9999;">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="modal-header"><h4 class="modal-title">Congratulation</h4></div>-->
+<!--<div class="modal-body"><p>Congratulation, you have cracked it.</p></div>-->
+<!--<div class="modal-footer">-->
+<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--TODO: this modal should ideally send an email. Alternatively , make a rails app and make an appropriate ajax call sp as to record the content of the message-->
+<div class="modal fade" id="myModal" style="z-index: 9999" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <legend style="border-style:none;margin-bottom: 0px;">Contact Us</legend>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <fieldset>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textName">Name</label>
+              <div class="col-md-6">
+                <input id="textName" name="textinput" placeholder="Enter Your Name" class="form-control input-md" type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textEmail">Email</label>
+              <div class="col-md-6">
+                <input id="textEmail" name="textinput" placeholder="Enter email address"  class="form-control input-md" type="text">
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textarea">Message</label>
+              <div class="col-md-6">
+                <textarea class="form-control" id="textarea" name="textarea" placeholder="Write your message"></textarea>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-warning pull-right">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--============================================Mobile View Start==============================================-->
+
+<!--=======Landing Page========-->
+
+
+<div class="row">
+  <div class="col-xs-12 visible-xs">
+    <a href="#" style=""><img id="mobile_logo" class="mob_landing_logo" src="assets/images/logo_with_name.png"></a>
+  </div>
+</div>
+
+<div id="text_phrase">
+  <div class="row">
+    <div class="col-xs-12 visible-xs"><p class="custom-style">TRAINING AND MARKETING</p></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 visible-xs"> <p class="custom-style" id="mobsoltext">SOLUTIONS POWERED BY</p></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 visible-xs">  <p id="mob_serious" class="mobile_text">SERIOUS GAMES</p> </div>
+  </div>
+</div>
+
+<div class="row">
+  <ul id="xsmenu" class="visible-xs">
+    <li onclick="window.location='mobcontact.html' ">About Us</li>
+    <li onclick="window.location='mobteam.html' ">The Team</li>
+    <li onclick="window.location='mobproduct.html' ">Products</li>
+    <li onclick="$('#demoModal').modal('show');">Demos</li>
+    <li onclick="window.open('http://ptotemtalk.wordpress.com/')">Blog</li>
+  </ul>
+</div>
+
+<div id="mob_footer">
+  <footer class="bs-footer visible-xs" role="contentinfo" id="footer-xs"> Ptotem &copy; 2013</footer>
+</div>
+
+
+<div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="congModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div>
+      <div class="modal-body"><p>To view our demo and game please visit us using a tablet or pc.</p></div>
+    </div>
+  </div>
+</div>
+
+
