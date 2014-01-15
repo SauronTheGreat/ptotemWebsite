@@ -9,7 +9,7 @@ $(function(){
     setTimeout(function () {
         $('#mobile_logo').fadeIn(3000);
         $('#mobile_logo').css({
-            marginTop:  '50%'
+            marginTop:  '60%'
         });
         $('#mobile_logo').animate({'marginTop': '3%' }, 1000);
     },2000,setTimeout(function(){

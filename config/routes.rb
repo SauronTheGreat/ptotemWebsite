@@ -57,4 +57,11 @@ PtotemWebsite::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  #match 'mobcontact' => 'welcom#mobcontact', :as => :mobcontact
+  get 'mobcontact' => 'welcom#mobcontact', as: :mobcontact
+  get 'mobteam' => 'welcom#mobteam', as: :mobteam
+  get 'mobproducts' => 'welcom#mobproducts', as: :mobproducts
+
+
 end

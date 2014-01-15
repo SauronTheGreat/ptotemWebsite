@@ -351,6 +351,10 @@ $(function () {
         state = 'home';
     });
 
+    $('#second_logo').on('click', function () {
+        $('#home').click();
+    });
+
     $('.glower').on('click', function (e) {
         game_choice();
     });

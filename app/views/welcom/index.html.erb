@@ -31,7 +31,7 @@
 </div>
 
 <!--the code for footer.... the copy right with compnay name-->
-<div class="row hidden-xs" id="footer">Ptotem &copy; 2013</div>
+<div class="row hidden-xs" id="footer">Ptotem &copy; 2014</div>
 
 <!--This is the code for the about us section of the website.-->
 <div class="row" id="aboutUs">
@@ -276,7 +276,10 @@
 
 <div id="menu_overlay" class="hidden-xs"></div>
 
-<img src="assets/images/logo_with_name.png" style="position: absolute; left:20px;top:20px;width:200px;height:75px;display: none;" id="second_logo">
+<!--<img src="assets/images/logo_with_name.png" style="position: absolute; left:20px;top:20px;width:200px;height:75px;display: none;" id="second_logo">-->
+<!--<a href="#" id="myID" style="pointer-events:auto;">-->
+  <img src="assets/images/logo_with_name.png" style="position: absolute; left:20px; top:20px; width:200px; height:75px; display:none; cursor:pointer; z-index: 1;" id="second_logo">
+<!--</a>-->
 
 
 
@@ -352,7 +355,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="textarea">Message</label>
               <div class="col-md-6">
-                <textarea class="form-control" id="textarea" name="textarea" placeholder="Write your message"></textarea>
+                <textarea class="form-control" id="textarea" name="textarea" placeholder="Write your message" style="resize:vertical; max-height:300px; min-height:100px;" rows="4" cols="50"></textarea>
               </div>
             </div>
           </fieldset>
@@ -392,16 +395,16 @@
 
 <div class="row">
   <ul id="xsmenu" class="visible-xs">
-    <li onclick="window.location='mobcontact.html' ">About Us</li>
-    <li onclick="window.location='mobteam.html' ">The Team</li>
-    <li onclick="window.location='mobproduct.html' ">Products</li>
+    <li onclick="window.location='/mobcontact' ">About Us</li>
+    <li onclick="window.location='/mobteam' ">The Team</li>
+    <li onclick="window.location='/mobproducts' ">Products</li>
     <li onclick="$('#demoModal').modal('show');">Demos</li>
     <li onclick="window.open('http://ptotemtalk.wordpress.com/')">Blog</li>
   </ul>
 </div>
 
 <div id="mob_footer">
-  <footer class="bs-footer visible-xs" role="contentinfo" id="footer-xs"> Ptotem &copy; 2013</footer>
+  <footer class="bs-footer visible-xs" role="contentinfo" id="footer-xs"> Ptotem &copy; 2014</footer>
 </div>
 
 
