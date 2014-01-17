@@ -11,17 +11,7 @@ var text_array = gon.employee_roles;
 //For Product Bookblock Array Start
 //var product_img_array = ["assets/images/products/Slide01.jpg", "assets/images/products/Slide02.jpg", "assets/images/products/Slide03.jpg", "assets/images/products/Slide04.jpg", "assets/images/products/Slide05.jpg", "assets/images/products/Slide06.jpg", "assets/images/products/Slide07.jpg", "assets/images/products/Slide08.jpg", "assets/images/products/Slide09.jpg", "assets/images/products/Slide10.jpg", "assets/images/products/Slide11.jpg", "assets/images/products/Slide12.jpg", "assets/images/products/Slide13.jpg", "assets/images/products/Slide14.jpg", "assets/images/products/Slide15.jpg", "assets/images/products/Slide16.jpg", "assets/images/products/Slide17.jpg", "assets/images/products/Slide18.jpg", "assets/images/products/Slide19.jpg", "assets/images/products/Slide20.jpg", "assets/images/products/Slide21.jpg", "assets/images/products/Slide22.jpg"]
 var product_img_array = gon.product_paths;
-
 //For Product Bookblock Array End
-
-//For easy game intro Bookblock Array Start
-var easy_game_img_array = ["assets/easy/serious_games_ppt_easy_Page_1.jpg", "assets/images/easy/serious_games_ppt_easy_Page_2.jpg", "assets/images/easy/serious_games_ppt_easy_Page_3.jpg", "assets/images/easy/serious_games_ppt_easy_Page_4.jpg", "assets/images/easy/serious_games_ppt_easy_Page_5.jpg"]
-//For easy game intro Bookblock Array End
-
-//For easy game intro Bookblock Array Start
-var hard_game_img_array = ["assets/hard/serious_games_ppt_hard_Page_1.jpg", "assets/images/hard/serious_games_ppt_hard_Page_2.jpg", "assets/images/hard/serious_games_ppt_hard_Page_3.jpg", "assets/images/hard/serious_games_ppt_hard_Page_4.jpg", "assets/images/hard/serious_games_ppt_hard_Page_5.jpg"]
-//For easy game intro Bookblock Array End
-
 var opacity_value = 0.5;
 //#008000", "#800080", "#ff6600", "#663300", "#ffffff", "#808080"];
 var easy_winner = ["#ff0000", "#ffff00", "#0000ff", "#000000"]  ;

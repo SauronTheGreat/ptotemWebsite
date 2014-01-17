@@ -22,4 +22,7 @@
 //= require mobileview.js
 //= require jquery.knob.js
 //= require bootbox.min
+//= require idangerous.swiper-2.0.min
+//= require movies-app
+//= require mobileview.js
 

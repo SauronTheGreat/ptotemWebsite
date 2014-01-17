@@ -14,7 +14,7 @@ class WelcomController < ApplicationController
     gon.employee_roles = @company.employees.map{|e| e.role}
     gon.employee_images = @company.employees.map{|e| e.avatar.url}
     gon.product_paths = @company.products.map{|p| p.avatar.url}
-    render :layout => false
+
   end
 
   def mobteam
@@ -23,7 +23,7 @@ class WelcomController < ApplicationController
     gon.employee_roles = @company.employees.map{|e| e.role}
     gon.employee_images = @company.employees.map{|e| e.avatar.url}
     gon.product_paths = @company.products.map{|p| p.avatar.url}
-    render :layout => false
+
   end
 
   def mobproducts
@@ -32,7 +32,7 @@ class WelcomController < ApplicationController
     gon.employee_roles = @company.employees.map{|e| e.role}
     gon.employee_images = @company.employees.map{|e| e.avatar.url}
     gon.product_paths = @company.products.map{|p| p.avatar.url}
-    render :layout => false
+
   end
 
 end

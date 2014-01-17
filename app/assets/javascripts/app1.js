@@ -6,6 +6,5 @@
 //= require jquerypp.min
 //= require jquery.bookblock.min
 //= require jquery.windy
-//= require mobileview.js
 //= require jquery.knob.js
 //= require bootbox.min

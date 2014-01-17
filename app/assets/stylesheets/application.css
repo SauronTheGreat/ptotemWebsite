@@ -11,7 +11,10 @@
  *= require_self
  *= require bootstrap.min
  *= require bookblock
- *= require styles
- *= require mobileview
+
  *= require bootstrap.icon-large.min
+ *= require idangerous.swiper
+ *= require normalize
+ *= require movies-app
+
  */
