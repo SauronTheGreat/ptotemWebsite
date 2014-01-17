@@ -1,0 +1,59 @@
+<%= javascript_include_tag "application_mob" %>
+
+<div class="row">
+  <div class="col-xs-12 visible-xs">
+    <a href="#" style=""><img id="mobile_logo" class="mob_landing_logo" src="assets/images/logo_with_name.png"></a>
+  </div>
+</div>
+
+<div id="text_phrase">
+  <div class="row">
+    <div class="col-xs-12 visible-xs"><p class="custom-style">TRAINING AND MARKETING</p></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 visible-xs"> <p class="custom-style" id="mobsoltext">SOLUTIONS POWERED BY</p></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 visible-xs">  <p id="mob_serious" class="mobile_text">SERIOUS GAMES</p> </div>
+  </div>
+</div>
+
+<div class="row">
+  <ul id="xsmenu" class="visible-xs">
+    <li><%= link_to "About Us", mobcontact_path,:style =>  "color: black;outline:none;"%></li>
+    <li><%= link_to "The Team", mobteam_path,:style =>  "color: black;outline:none;" %></li>
+    <li><%= link_to "Products", mobproducts_path,:style =>  "color: black;outline:none;" %></li>
+    <li onclick="$('#demoModal').modal('show');">Demos</li>
+    <li class="mobile_li_last"><a style="color: black;outline:none;" href="http://ptotemtalk.wordpress.com" target="_blank">Blog</a></li>
+  </ul>
+</div>
+
+<div id="mob_footer">
+  <footer class="bs-footer visible-xs" role="contentinfo" id="footer-xs"> Ptotem &copy; 2014</footer>
+</div>
+
+
+<div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="congModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div>
+      <div class="modal-body"><p>To view our demo and game please visit us using a tablet or pc.</p></div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+    .custom-style {
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 1.4em;
+        padding: 0;
+        margin-bottom: -16px;
+        line-height: 1.4em;
+        opacity: 0;
+    }
+</style>
+

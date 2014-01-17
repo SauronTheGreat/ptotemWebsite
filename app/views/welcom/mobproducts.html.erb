@@ -1,6 +1,4 @@
 
-
-
 <%= render :partial => "mobile_menu_bar" %>
 
 <div class="swiper-container swiper-content">
@@ -8,7 +6,7 @@
     <% @company.products.each do |product| %>
         <div class="swiper-slide">
           <div class="inner">
-            <img class="movie-pic_product" src="<%= product.avatar %>" height="150" width="150" alt="">
+            <img class="movie-pic_product" src="<%= product.avatar.url %>" height="150" width="150" alt="">
             <div class="clearfix"></div>
           </div>
         </div>
@@ -21,7 +19,7 @@
         <% if index >= 1 %>
             <div class="swiper-slide">
               <span class="angle"></span>
-              <img src="<%= product.avatar %>" alt="">
+              <img src="<%=  product.avatar.url %>" alt="">
             </div>
         <% else %>
             <div class="swiper-slide active-nav">
@@ -36,10 +34,3 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/idangerous.swiper-2.0.min.js"></script>
 <script src="assets/js/movies-app.js"></script>
-<script>
-    $(function(){
-        $('.navbar-brand').css('float','none');
-    })
-</script>
-</body>
-</html>

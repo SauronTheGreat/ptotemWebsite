@@ -13,13 +13,9 @@
 //= require jquery
 
 //= require jquery.easing.1.3
+//= require mobileview
 //= require bootstrap.min
 //= require jquery.parallax.min
-//= require jquerypp.min
-//= require jquery.bookblock.min
-//= require jquery.windy
-//= require zndexpage.js
-//= require jquery.knob.js
 //= require bootbox.min
-
-
+//= require idangerous.swiper-2.0.min
+//= require movies-app

@@ -1,3 +1,4 @@
+
 <%= render :partial => "mobile_menu_bar" %>
 
 <div class="swiper-container swiper-content">
@@ -19,15 +20,13 @@
         <% if index >= 1 %>
             <div class="swiper-slide">
               <span class="angle"></span>
-              <!--<img src="<%#= emp.avatar.url %>">-->
-              <img src="/assets/images/amol.jpg">
+              <img src="<%= emp.avatar.url %>">
               <div class="title"><%= emp.name %></div>
             </div>
         <% else %>
             <div class="swiper-slide active-nav">
               <span class="angle"></span>
-              <!--<img src="<%#= emp.avatar.url %>">-->
-              <img src="/assets/images/amol.jpg">
+              <img src="<%= emp.avatar.url %>">
               <div class="title"><%= emp.name %></div>
             </div>
         <% end %>
@@ -36,8 +35,3 @@
   </div>
 </div>
 
-<script>
-//    $(function(){
-//        $('.navbar-brand').css('float','none');
-//    })
-</script>
