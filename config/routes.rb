@@ -59,9 +59,9 @@ PtotemWebsite::Application.routes.draw do
   #   end
 
   #match 'mobcontact' => 'welcom#mobcontact', :as => :mobcontact
-  get 'mobcontact' => 'welcom#mobcontact', as: :mobcontact
-  get 'mobteam' => 'welcom#mobteam', as: :mobteam
-  get 'mobproducts' => 'welcom#mobproducts', as: :mobproducts
+  get 'mobcontact' => 'welcom#mobcontact', :as  => "mobcontact"
+  get 'mobteam' => 'welcom#mobteam', :as => "mobteam"
+  get 'mobproducts' => 'welcom#mobproducts', :as => "mobproducts"
 
 
 end
