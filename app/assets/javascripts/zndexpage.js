@@ -284,6 +284,9 @@ $(function () {
         $('#catchphrase').hatchShow('catchphrase');
     });
 
+    $('#fake_submit_mail').on('click', function(){
+        $('#act_submit_mail').trigger('click');
+    });
 
     $('#teamLink').on('click', function () {
         $(this).hide();
