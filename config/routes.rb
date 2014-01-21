@@ -62,6 +62,7 @@ PtotemWebsite::Application.routes.draw do
   get 'mobcontact' => 'welcom#mobcontact', :as  => "mobcontact"
   get 'mobteam' => 'welcom#mobteam', :as => "mobteam"
   get 'mobproducts' => 'welcom#mobproducts', :as => "mobproducts"
+  post 'feedback' => 'welcom#feedback', :as => "feedback"
 
 
 end

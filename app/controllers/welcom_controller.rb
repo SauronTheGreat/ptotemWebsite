@@ -35,4 +35,16 @@ class WelcomController < ApplicationController
     render :layout => "mobile"
   end
 
+  def feedback
+    #render :text => params
+    #return
+    #name"=>"Nilesh", "email"=>"nilesh@ptotem.com", "subject"=>"Test 01", "message"=>"Test 01 Message", "contact_no"=>"9664212069", "commit"=>"Save", "action"=>"feedback", "controller"=>"welcom"
+
+    @feedback = Feedback.create!(:name=>params[:name], :email=>params[:email], :subject=>params[:subject], :message=>params[:message], :contact_no=>params[:contact_no])
+    @feedback.save!
+
+    UserMailer.registration_confirmation(@feedback.name, @feedback.email, @feedback.subject, @feedback.message, @feedback.contact_no, "info@ptotem.com").deliver
+    redirect_to '/'
+  end
+
 end

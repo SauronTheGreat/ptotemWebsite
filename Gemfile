@@ -55,4 +55,4 @@ end
 
 
 gem "devise"
-gem 'contact_us'
+#gem 'contact_us'

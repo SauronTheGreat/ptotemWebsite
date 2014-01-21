@@ -40,8 +40,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    contact_us (0.5.0)
-      rails (>= 3.0.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -170,7 +168,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  contact_us
   devise
   execjs
   gon

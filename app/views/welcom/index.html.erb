@@ -179,8 +179,55 @@
         <legend style="border-style:none;margin-bottom: 0px;">Contact Us</legend>
       </div>
       <div class="modal-body">
-        <%= render :partial => 'contact_us/contacts/mypartial' %>
-        <!--<form class="form-horizontal">-->
+        <%#= render :partial => 'contact_us/contacts/mypartial' %>
+        <%= form_tag('/feedback', :class=>"form-horizontal") do -%>
+            <fieldset>
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textName">Name</label>
+                <div class="col-md-6">
+                  <!--<input id="textName" name="textinput" placeholder="Enter Your Name" class="form-control input-md" type="text">-->
+                  <%= text_field_tag 'name', nil, placeholder: 'Enter Your Name', :class=>"form-control input-md" %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textEmail">Email</label>
+                <div class="col-md-6">
+                  <!--<input id="textEmail" name="textinput" placeholder="Enter Your Email Address" class="form-control input-md" type="text">-->
+                  <%= text_field_tag 'email', nil, placeholder: 'Enter email', :class=>"form-control input-md" %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textarea">Subject</label>
+                <div class="col-md-6">
+                  <%= text_field_tag 'subject', nil, placeholder: 'Enter Subject', :class=>"form-control input-md" %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textarea">Message</label>
+                <div class="col-md-6">
+                  <!--<textarea class="form-control" id="textarea" name="textarea" placeholder="Write your message" style="resize:vertical; max-height:300px; min-height:100px;" rows="4" cols="50"></textarea>-->
+                  <%= text_area_tag 'message', nil, placeholder: 'Write Your Message', :class=>"form-control", :style=>"resize:vertical; max-height:300px; min-height:100px;", :rows=>"4",  :cols=>"50" %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="textarea">Contact No.</label>
+                <div class="col-md-6">
+                  <%= text_field_tag 'contact_no', nil, placeholder: 'Enter Your Contact No.', :class=>"form-control input-md" %>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="modal-footer">
+              <!--<button type="submit" id="fake_submit_mail" class="btn btn-warning pull-right">Submit</button>-->
+              <%= submit_tag 'Submit', :class=>"btn btn-warning pull-right" %>
+            </div>
+        <% end -%>
+
+        <!--<form class="form-horizontal" action="">-->
           <!--<fieldset>-->
             <!--<div class="form-group">-->
               <!--<label class="col-md-4 control-label" for="textName">Name</label>-->
@@ -206,9 +253,9 @@
           <!--</fieldset>-->
         <!--</form>-->
       </div>
-      <div class="modal-footer">
-        <button type="submit" id="fake_submit_mail" class="btn btn-warning pull-right">Submit</button>
-      </div>
+      <!--<div class="modal-footer">-->
+        <!--<button type="submit" id="fake_submit_mail" class="btn btn-warning pull-right">Submit</button>-->
+      <!--</div>-->
 
     </div>
   </div>

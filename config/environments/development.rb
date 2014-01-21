@@ -21,12 +21,12 @@ PtotemWebsite::Application.configure do
 
   config.action_mailer.smtp_settings = {
       enable_starttls_auto: true,
-      address: 'smtp.gmail.com',
-      port: 587,
-      domain: 'gmail.com',
+      address: 'force.nseasy.com',
+      port: 993,
+      domain: 'ptotem.com',
       authentication: 'plain',
-      user_name: '<email@yourdomain.com>',
-      password: '<password>'
+      user_name: 'info@ptotem.com',
+      password: '19loki76'
   }
 
   # Print deprecation notices to the Rails logger.
