@@ -21,5 +21,6 @@
 //= require zndexpage.js
 //= require jquery.knob.js
 //= require bootbox.min
+//= require jquery.validate.js
 
 

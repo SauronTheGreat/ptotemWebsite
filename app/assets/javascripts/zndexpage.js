@@ -288,6 +288,8 @@ $(function () {
 //        $('#act_submit_mail').trigger('click');
 //    });
 
+    $("form").validate();
+
     $('#teamLink').on('click', function () {
         $(this).hide();
         $('.windy>nav').css('z-index', '1');
