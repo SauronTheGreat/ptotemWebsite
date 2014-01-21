@@ -194,7 +194,6 @@
                 <label class="col-md-4 control-label" for="textEmail">Email</label>
                 <div class="col-md-6">
                   <!--<input id="textEmail" name="textinput" placeholder="Enter Your Email Address" class="form-control input-md" type="text">-->
-                  <%#= text_field_tag 'email', nil, placeholder: 'Enter email', :class=>"form-control input-md required" %>
                   <%= email_field_tag  'email', nil, placeholder: 'Enter email', :class=>"form-control input-md required" %>
                 </div>
               </div>
@@ -217,7 +216,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">Contact No.</label>
                 <div class="col-md-6">
-                  <%= text_field_tag 'contact_no', nil, placeholder: 'Enter Your Contact No.', :class=>"form-control input-md required" %>
+                  <%= number_field_tag 'contact_no', nil, placeholder: 'Enter Your Contact No.', :class=>"form-control input-md required" %>
                 </div>
               </div>
             </fieldset>
